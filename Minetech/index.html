@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="dashboard">
+        <header class="project-header">
+            <div class="project-title">
+                <h1>Project sample {name}</h1>
+                <p>Last Updated: 22 May, 2024 at 8:40 AM</p>
+            </div>
+            <div class="project-actions">
+                <button class="icon-button"><img src="./Icons/search (1).svg" alt="Search"></button>
+                <button class="icon-button"><img src="./Icons/star.svg" alt="Star"></button>
+                <button class="icon-button"><img src="./Icons/threedots.svg" alt="More options"></button>
+            </div>
+        </header>
+        
+        <nav class="project-nav">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#timelines">Timelines</a></li>
+                <li><a href="#files" class="active">Files</a></li>
+                <li><a href="#discussion">Discussion</a></li>
+                <li><a href="#sitemap">Site Map</a></li>
+            </ul>
+            <div class="team-members">
+                <div class="avatar-group">
+                    <img src="./Images/Avatar 1.svg" alt="Team member 1" class="avatar">
+                    <img src="./Images/Avatar 2.svg" alt="Team member 2" class="avatar">
+                    <img src="./Images/Avatar 3.svg" alt="Team member 3" class="avatar">
+                    <span class="avatar more-members">+11</span>
+                </div>
+                <button class="invite-button">
+                    <img src="./Icons/download.svg" alt="Invite">
+                    Invite
+                </button>
+            </div>
+        </nav>
+        
+        <div class="file-controls">
+            <div class="view-controls">
+                <button class="view-button active"><img src="./Icons/linear1.svg" alt="Table view"> Table</button>
+                <button class="view-button"><img src="./Icons/linear2.svg" alt="List view"> List</button>
+            </div>
+            <div class="action-controls">
+                <button class="add-task-button">+ Add a task</button>
+                <button class="filter-button"><img src="./Icons/linear3.svg" alt="Filter"> Filter</button>
+            </div>
+        </div>
+        
+        <table class="file-table">
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" id="select-all">
+                        <label for="select-all">File Name</label>
+                        <img src="./Icons/CaretUpDown.svg" alt="Sort">
+                    </th>
+                    <th>File Size <img src="./Icons/CaretUpDown.svg" alt="Sort"></th>
+                    <th>User Permission <img src="./Icons/CaretUpDown.svg" alt="Sort"></th>
+                    <th>Last Modified <img src="./Icons/CaretUpDown.svg" alt="Sort"></th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="file1" checked>
+                        <label for="file1">Site Images</label>
+                    </td>
+                    <td>3.8GB</td>
+                    <td>
+                        <div class="avatar-group">
+                            <img src="./Images/Avatar 1.svg" alt="User 1" class="avatar">
+                            <img src="./Images/Avatar 2.svg" alt="User 2" class="avatar">
+                            <img src="./Images/Avatar 3.svg" alt="User 3" class="avatar">
+                            <img src="./Images/Avatar 4.svg" alt="User 4" class="avatar">
+                            <span class="avatar more-users">+3</span>
+                        </div>
+                    </td>
+                    <td>2025/8/16</td>
+                    <td>
+                        <button class="action-button delete">Delete</button>
+                        <button class="action-button edit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="file2">
+                        <label for="file2">Construction Design</label>
+                    </td>
+                    <td>7.2MB</td>
+                    <td>
+                        <div class="avatar-group">
+                            <img src="./Images/Avatar 2.svg" alt="User 2" class="avatar">
+                            <img src="./Images/Avatar 5.svg" alt="User 5" class="avatar">
+                        </div>
+                    </td>
+                    <td>2025/8/16</td>
+                    <td>
+                        <button class="action-button delete">Delete</button>
+                        <button class="action-button edit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="file3" checked>
+                        <label for="file3">Budget Overview</label>
+                    </td>
+                    <td>881MB</td>
+                    <td>
+                        <div class="avatar-group">
+                            <img src="./Images/Avatar 1.svg" alt="User 1" class="avatar">
+                            <img src="./Images/Avatar 3.svg" alt="User 3" class="avatar">
+                            <span class="avatar more-users">+3</span>
+                        </div>
+                    </td>
+                    <td>2025/8/16</td>
+                    <td>
+                        <button class="action-button delete">Delete</button>
+                        <button class="action-button edit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="file4">
+                        <label for="file4">Site Report</label>
+                    </td>
+                    <td>1.25GB</td>
+                    <td>
+                        <div class="avatar-group">
+                            <img src="./Images/Avatar 4.svg" alt="User 4" class="avatar">
+                            <img src="./Images/Avatar 5.svg" alt="User 5" class="avatar">
+                            <img src="./Images/Avatar 6.svg" alt="User 6" class="avatar">
+                            <span class="avatar more-users">+3</span>
+                        </div>
+                    </td>
+                    <td>2025/8/16</td>
+                    <td>
+                        <button class="action-button delete">Delete</button>
+                        <button class="action-button edit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="file5" checked>
+                        <label for="file5">Documents</label>
+                    </td>
+                    <td>1.2TB</td>
+                    <td>
+                        <div class="avatar-group">
+                            <img src="./Images/Avatar 1.svg" alt="User 1" class="avatar">
+                            <img src="./Images/Avatar 2.svg" alt="User 2" class="avatar">
+                            <img src="./Images/Avatar 3.svg" alt="User 3" class="avatar">
+                            <img src="./Images/Avatar 4.svg" alt="User 4" class="avatar">
+                            <span class="avatar more-users">+3</span>
+                        </div>
+                    </td>
+                    <td>2025/8/16</td>
+                    <td>
+                        <button class="action-button delete">Delete</button>
+                        <button class="action-button edit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="file6" checked>
+                        <label for="file6">Tunnel Design</label>
+                    </td>
+                    <td>115KB</td>
+                    <td>
+                        <div class="avatar-group">
+                            <img src="./Images/Avatar 3.svg" alt="User 3" class="avatar">
+                            <img src="./Images/Avatar 6.svg" alt="User 6" class="avatar">
+                            <img src="./Images/Avatar 7.svg" alt="User 7" class="avatar">
+                        </div>
+                    </td>
+                    <td>2025/8/16</td>
+                    <td>
+                        <button class="action-button delete">Delete</button>
+                        <button class="action-button edit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="file7" checked>
+                        <label for="file7">Inventory Reports</label>
+                    </td>
+                    <td>100KB</td>
+                    <td>
+                        <div class="avatar-group">
+                            <img src="./Images/Avatar 2.svg" alt="User 2" class="avatar">
+                            <img src="./Images/Avatar 3.svg" alt="User 3" class="avatar">
+                            <img src="./Images/Avatar 5.svg" alt="User 5" class="avatar">
+                            <img src="./Images/Avatar 6.svg" alt="User 6" class="avatar">
+                            <span class="avatar more-users">+3</span>
+                        </div>
+                    </td>
+                    <td>2025/8/16</td>
+                    <td>
+                        <button class="action-button delete">Delete</button>
+                        <button class="action-button edit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="file8">
+                        <label for="file8">Land Surveys</label>
+                    </td>
+                    <td>1.18MB</td>
+                    <td>
+                        <div class="avatar-group">
+                            <img src="./Images/Avatar 1.svg" alt="User 1" class="avatar">
+                            <img src="./Images/Avatar 2.svg" alt="User 2" class="avatar">
+                            <img src="./Images/Avatar 3.svg" alt="User 3" class="avatar">
+                            <img src="./Images/Avatar 4.svg" alt="User 4" class="avatar">
+                            <img src="./Images/Avatar 5.svg" alt="User 5" class="avatar">
+                            <img src="./Images/Avatar 6.svg" alt="User 6" class="avatar">
+                        </div>
+                    </td>
+                    <td>2025/8/16</td>
+                    <td>
+                        <button class="action-button delete">Delete</button>
+                        <button class="action-button edit">Edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
