@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="dashboard">
+        <header class="project-header">
+            <div class="project-title">
+                <h1>Project sample {name}</h1>
+                <p>Last Updated: 22 May, 2024 at 8:40 AM</p>
+            </div>
+            <div class="project-actions">
+                <button class="icon-button"><img src="./Icons/search (1).svg" alt="Search"></button>
+                <button class="icon-button"><img src="./Icons/star.svg" alt="Star"></button>
+                <button class="icon-button"><img src="./Icons/threedots.svg" alt="More options"></button>
+            </div>
+        </header>
+        
+        <nav class="project-nav">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#timelines">Timelines</a></li>
+                <li><a href="#files" class="active">Files</a></li>
+                <li><a href="#discussion">Discussion</a></li>
+                <li><a href="#sitemap">Site Map</a></li>
+            </ul>
+            <div class="team-members">
+                <div class="avatar-group">
+                    <img src="./Images/Avatar 1.svg" alt="Team member 1" class="avatar">
+                    <img src="./Images/Avatar 2.svg" alt="Team member 2" class="avatar">
+                    <img src="./Images/Avatar 3.svg" alt="Team member 3" class="avatar">
+                    <span class="avatar more-members">+11</span>
+                </div>
+                <button class="invite-button">
+                    <img src="./Icons/download.svg" alt="Invite">
+                    Invite
+                </button>
+            </div>
+        </nav>
+        
+        <div class="file-controls">
+            <div class="view-controls">
+                <button class="view-button active"><img src="./Icons/linear1.svg" alt="Table view"> Table</button>
+                <button class="view-button"><img src="./Icons/linear2.svg" alt="List view"> List</button>
+            </div>
+            <div class="action-controls">
+                <button class="add-task-button">+ Add a task</button>
+                <button class="filter-button"><img src="./Icons/linear3.svg" alt="Filter"> Filter</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
