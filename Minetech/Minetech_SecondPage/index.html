@@ -9,6 +9,17 @@
 </head>
 <body>
     <main class="dashboard">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="dashboard">
         <header class="project-header">
             <div class="project-title">
                 <h1>Project sample {name}</h1>
@@ -35,6 +46,7 @@
                     <img src="./Images/Avatar 1.svg" alt="Team member 1" class="avatar">
                     <img src="./Images/Avatar 2.svg" alt="Team member 2" class="avatar">
                     <img src="./Images/Avatar 3.svg" alt="Team member 3" class="avatar">
+                    <img src="./Images/Avatar 5.svg" alt="Team member 3" class="avatar">
                     <span class="avatar more-members">+11</span>
                 </div>
                 <button class="invite-button">
@@ -52,6 +64,126 @@
             <div class="action-controls">
                 <button class="add-task-button">+ Add a task</button>
                 <button class="filter-button"><img src="./Icons/linear3.svg" alt="Filter"> Filter</button>
+            </div>
+        </div>
+
+        <div class="kanban-board">
+            <div class="kanban-column">
+                <div class="column-header">
+                    <h3 class="column-title">To Do</h3>
+                    <button class="column-count"><img src="./Icons/add.png"></button>
+                </div>
+                <div class="task-card">
+                    <div class="parameter">
+                    <span class="task-status status-high">High</span>
+                    <img src="./Icons/star.svg" class="options"></div>
+                    <h4 class="task-title">Task_name_sample</h4>
+                    <p class="task-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel hendrerit ipsu...</p>
+                    <div class="progress-container">
+                        <div class="progress-header">
+                            <span class="progress-text">Progress</span>
+                            <span class="progress-text">0%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                    <div class="task-footer">
+                        <div class="task-assignees">
+                            <img src="./Images/Avatar 1.svg" alt="Assignee 1" class="task-assignee">
+                            <img src="./Images/Avatar 3.svg" alt="Assignee 2" class="task-assignee">
+                            <img src="./Images/Avatar 4.svg" alt="Assignee 3" class="task-assignee">
+                        </div>
+                        <span class="task-due-date">21 Oct 2022</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-column">
+                <div class="column-header">
+                    <h3 class="column-title">In Progress</h3>
+                    <button class="column-count"><img src="./Icons/add.png"></button>
+                </div>
+                <div class="task-card">
+                    <span class="task-status status-high">High</span>
+                    <h4 class="task-title">Task_name_sample</h4>
+                    <p class="task-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel hendrerit ipsu...</p>
+                    <div class="progress-container">
+                        <div class="progress-header">
+                            <span class="progress-text">Progress</span>
+                            <span class="progress-text">50%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="task-footer">
+                        <div class="task-assignees">
+                            <img src="./Images/Avatar 3.svg" alt="Assignee 1" class="task-assignee">
+                            <img src="./Images/Avatar 4.svg" alt="Assignee 2" class="task-assignee">
+                            <img src="./Images/Avatar 5.svg" alt="Assignee 3" class="task-assignee">
+                            <img src="./Images/Avatar 6.svg" alt="Assignee 3" class="task-assignee">
+                            <img src="./Images/Avatar 1.svg" alt="Assignee 3" class="task-assignee">
+                        </div>
+                        <span class="task-due-date">21 Oct 2022</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-column">
+                <div class="column-header">
+                    <h3 class="column-title">Completed</h3>
+                    <button class="column-count"><img src="./Icons/add.png"></button>
+                </div>
+                <div class="task-card">
+                    <span class="task-status status-high">High</span>
+                    <h4 class="task-title">Task_name_sample</h4>
+                    <p class="task-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel hendrerit ipsu...</p>
+                    <div class="progress-container">
+                        <div class="progress-header">
+                            <span class="progress-text">Progress</span>
+                            <span class="progress-text">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-complete" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="task-footer">
+                        <div class="task-assignees">
+                            <img src="./Images/Avatar 1.svg" alt="Assignee 1" class="task-assignee">
+                            <img src="./Images/Avatar 2.svg" alt="Assignee 2" class="task-assignee">
+                            
+                        </div>
+                        <span class="task-due-date">21 Oct 2022</span>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-column">
+                <div class="column-header">
+                    <h3 class="column-title">Cancelled</h3>
+                    <button class="column-count"><img src="./Icons/add.png"></button>
+                </div>
+                <div class="task-card">
+                    <span class="task-status status-medium">Medium</span>
+                    <h4 class="task-title">Task_name_sample</h4>
+                    <p class="task-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel hendrerit ipsu...</p>
+                    <div class="progress-container">
+                        <div class="progress-header">
+                            <span class="progress-text">Progress</span>
+                            <span class="progress-text">Cancelled</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-cancelled" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="task-footer">
+                        <div class="task-assignees">
+                            <img src="./Images/Avatar 1.svg" alt="Assignee 1" class="task-assignee">
+                            <img src="./Images/Avatar 2.svg" alt="Assignee 2" class="task-assignee">
+                            <img src="./Images/Avatar 4.svg" alt="Assignee 3" class="task-assignee">
+                            <img src="./Images/Avatar 6.svg" alt="Assignee 3" class="task-assignee">
+                        </div>
+                        <span class="task-due-date">21 Oct 2022</span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
