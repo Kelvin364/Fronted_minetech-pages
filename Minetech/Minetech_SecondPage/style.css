@@ -315,3 +315,17 @@ padding: 0px;
     font-size: 12px;
     color: #64748B;
 }
+.column-count{
+    background-color: #F4F5FB;
+    color: #4F46E5;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    margin-left: -8px;
+}
